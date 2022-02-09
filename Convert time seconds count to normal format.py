@@ -1,4 +1,5 @@
 import sys
+import clipboard
 
 secCount = 0  # initial value
 
@@ -23,3 +24,4 @@ else:
     time = "%d:%02d:%02d" % (hours, minutes, seconds)
 
 print(time)
+clipboard.copy(time)
